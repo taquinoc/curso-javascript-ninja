@@ -87,12 +87,12 @@ Crie uma função com as seguintes características:
 
 function triploArgumentos(num1, num2, num3){
 
-    if(num1 != undefined && num2 === undefined && num3 === undefined){
+    if(num1 !== undefined && num2 === undefined && num3 === undefined){
         return "Somente o primeiro argumento foi definido: "+num1;
-    } else if(num1 != undefined && num2 != undefined && num3 === undefined){
+    } else if(num1 !== undefined && num2 !== undefined && num3 === undefined){
         var doisArgumentos = num1+num2;
         return "Dois argumentos definidos, a soma dos argumentos é: "+doisArgumentos;
-    } else if(num1 != undefined && num2 != undefined && num3 != undefined){
+    } else if(num1 !== undefined && num2 !== undefined && num3 !== undefined){
         var tresArgumentos = (num1+num2)/num3
         return "Três argumentos definidos, será retornado a soma dos dois primeiros argumentos divido pelo terceiro: "+tresArgumentos;
     } else if(num1 === undefined && num2 === undefined && num3 == undefined){
