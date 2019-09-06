@@ -39,7 +39,7 @@ function adicionaValor(valorNovo){
 
 adicionaValor(144);
 
-// Qual o retorno da função? (Use comentários de bloco).
+// Qual o retorno da função? (Use comentários de bloco).,mul
 
 O valor da variável agora é: 144
 
@@ -54,9 +54,8 @@ Crie uma função com as seguintes características:
 function multriplica(num1, num2, num3){
     if(num1 === undefined || num2 === undefined || num3 === undefined){
         return "Preencha todos os valores corretamente!";
-    } else {
-        return (num1*num2*num3) + 2;
     }
+    return (num1*num2*num3) + 2;
 };
 
 // Invoque a função criada acima, passando só dois números como argumento.
@@ -89,7 +88,7 @@ function triploArgumentos(num1, num2, num3){
 
     if(num1 !== undefined && num2 === undefined && num3 === undefined){
         return "Somente o primeiro argumento foi definido: "+num1;
-    } else if(num1 !== undefined && num2 !== undefined && num3 === undefined){
+    } else if(num1 !== undefined && num2 != undefined && num3 === undefined){
         var doisArgumentos = num1+num2;
         return "Dois argumentos definidos, a soma dos argumentos é: "+doisArgumentos;
     } else if(num1 !== undefined && num2 !== undefined && num3 !== undefined){
